@@ -27,7 +27,7 @@ public class FormPalindrome {
 		char[] result = new char[lenOfWord];
 		
 		// Initial values
-		char A = 'a',one = '1', hash = '#';
+		char A = 'a',zero = '0', hash = '#';
 		
 		//check for invalid input
 		if(lenOfWord != noOfAlpha + noOfDigits + noOfSpeChar) {
@@ -56,7 +56,7 @@ public class FormPalindrome {
 				
 				for(int j =0 ; j < noOfDigits/2 ;j++){
 					
-					result[i] = (char)((int)one + k);
+					result[i] = (char)((int)zero + k);
 					result[lenOfWord -1 - i] = result[i];
 					
 					k++;
@@ -114,7 +114,7 @@ public class FormPalindrome {
 					
 					for(int j =0 ; j < noOfDigits/2 ;j++){
 						
-						result[i] = (char)((int)one + k);
+						result[i] = (char)((int)zero + k);
 						result[lenOfWord -1 - i] = result[i];
 						
 						k++;
@@ -122,7 +122,7 @@ public class FormPalindrome {
 					}
 					
 					if(noOfDigits % 2 == 1)
-						result[lenOfWord / 2] = (char)((int)one + k);
+						result[lenOfWord / 2] = (char)((int)zero + k);
 					
 					k = 0;
 					
