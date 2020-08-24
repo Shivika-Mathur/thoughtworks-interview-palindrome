@@ -2,6 +2,8 @@
 
 Please use the below mentioned test cases to test this program.
 
+Note : Assuming the order of characters in the string is alphabets, digits and then special characters.
+
 Case 1 :
 
 Input :
